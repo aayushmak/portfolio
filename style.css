@@ -37,7 +37,7 @@ nav ul li a:hover {
 
 .hero {
     height: 100vh;
-    background: url('hero-bg.jpg') no-repeat center center/cover;
+    background: url('hero.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,6 +120,12 @@ h2::after {
 
 .project-card:hover img {
     transform: scale(1.1);
+}
+ 
+.textt {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-variant: small-caps; */
+    font-size: large;
 }
 
 .overlay {
