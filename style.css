@@ -7,7 +7,8 @@ body {
 }
 
 header {
-    background: #333;
+    background: #ebeeef;
+    visibility: 50;
     padding: 1rem;
     position: fixed;
     width: 100%;
@@ -25,24 +26,24 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #0f0e0e;
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #f39c12;
+    color: #a5d7e2;
 }
 
 .hero {
     height: 100vh;
-    background: url('hero.jpg') no-repeat center center/cover;
+    background: url('hero.png') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #121111;
     text-align: center;
     padding: 0 2rem;
 }
@@ -62,8 +63,8 @@ nav ul li a:hover {
     display: inline-block;
     padding: 0.75rem 2rem;
     margin-top: 2rem;
-    background-color: #f39c12;
-    color: #fff;
+    background-color: #a5d7e2;
+    color: #131313;
     border-radius: 25px;
     text-decoration: none;
     font-size: 1.2rem;
@@ -71,7 +72,7 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background-color: #e67e22;
+    background-color: #a5d7e2;
     transform: scale(1.05);
 }
 
@@ -94,7 +95,7 @@ h2::after {
     content: '';
     width: 100px;
     height: 4px;
-    background: #f39c12;
+    background: #a5d7e2;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -163,7 +164,7 @@ form input, form textarea {
 
 form button {
     padding: 1rem 2rem;
-    background-color: #f39c12;
+    background-color: #a5d7e2;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -172,7 +173,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #e67e22;
+    background-color: #a5d7e2;
 }
 
 footer {
@@ -195,7 +196,7 @@ footer .socials a {
 }
 
 footer .socials a:hover {
-    color: #f39c12;
+    color: #a5d7e2;
 }
 
 @keyframes fadeInDown {
