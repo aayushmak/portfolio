@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "export": "^0.1.337",
+    "export-files": "^3.0.2",
     "framer-motion": "^12.23.9",
     "mini-svg-data-uri": "^1.4.4",
     "next": "15.4.4",
