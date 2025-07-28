@@ -68,9 +68,11 @@
 }
 
 @layer base {
-  * {
-    @apply border-[hsl(var(--border))] !scroll-smooth;
-  }
+ * {
+  border-color: hsl(var(--border));
+  scroll-behavior: smooth;
+}
+
   body {
     @apply bg-background text-foreground;
   }
