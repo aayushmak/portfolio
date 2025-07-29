@@ -1,6 +1,7 @@
 "use client";
 import { IconArrowNarrowRight } from "@tabler/icons-react";
 import { useState, useRef, useId, useEffect } from "react";
+import CertificateModal from "../CertificateModal"; // adjust path if needed
 
 interface SlideData {
   title: string;
@@ -17,7 +18,7 @@ interface SlideProps {
 
 const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
   const slideRef = useRef<HTMLLIElement>(null);
-
+  const [modalOpen, setModalOpen] = useState(false);
   const xRef = useRef(0);
   const yRef = useRef(0);
   const frameRef = useRef<number>();
@@ -65,7 +66,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
   const { src, button, title } = slide;
 
   return (
-    <div className="[perspective:1200px] [transform-style:preserve-3d]">
+    <div className="[perspective:1200px] [transform-style:preserve-3d] ">
       <li
         ref={slideRef}
         className="flex flex-1 flex-col items-center justify-center relative text-center text-white opacity-100 transition-all duration-300 ease-in-out w-[70vmin] h-[70vmin] mx-[4vmin] z-10 "
@@ -82,7 +83,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
         }}
       >
         <div
-          className="absolute top-0 left-0 w-full h-full bg-[#1D1F2F] rounded-[1%] overflow-hidden transition-all duration-150 ease-out"
+          className="absolute top-0 left-0 w-full h-full bg-background rounded-2xl overflow-hidden transition-all duration-150 ease-out"
           style={{
             transform:
               current === index
@@ -115,10 +116,20 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
             {title}
           </h2>
           <div className="flex justify-center">
-            <button className="mt-6  px-4 py-2 w-fit mx-auto sm:text-sm text-black bg-white h-12 border border-transparent text-xs flex justify-center items-center rounded-2xl hover:shadow-lg transition duration-200 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
+            <button
+              onClick={() => setModalOpen(true)}
+              className="mt-6 px-4 py-2 w-fit mx-auto sm:text-sm text-black bg-white h-12 border border-transparent text-xs flex justify-center items-center rounded-2xl hover:shadow-lg transition duration-200 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
+            >
               {button}
             </button>
           </div>
+
+          <CertificateModal
+            isOpen={modalOpen}
+            onClose={() => setModalOpen(false)}
+            src={src}
+            title={title}
+          />
         </article>
       </li>
     </div>

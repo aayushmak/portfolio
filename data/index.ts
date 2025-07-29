@@ -192,6 +192,50 @@ export const workExperience = [
   },
 ];
 
+export const certificates = [
+  {
+    title: "Mentorship",
+    button: "View Certificate",
+    src: "/Design_Thinking.png"
+  },
+    {
+    title: "Mentorship",
+    button: "View Certificate",
+    src: "/Git&Github.png"
+  },
+    {
+    title: "Fellowship",
+    button: "View Certificate",
+    src: "/fellowship.png"
+  },
+    {
+    title: "Volunteering",
+    button: "View Certificate",
+    src: "/WIIT(Parbat).jpg"
+  },
+    {
+    title: "Participation",
+    button: "View Certificate",
+    src: "/data.png"
+  },
+    {
+    title: "Participation",
+    button: "View Certificate",
+    src: "/figma.png"
+  },
+    {
+    title: "Volunteering",
+    button: "View Certificate",
+    src: "/expo.png"
+  },
+    {
+    title: "Executive Member",
+    button: "View Certificate",
+    src: "/executive.png"
+  },
+
+]
+
 export const socialMedia = [
   {
     id: 1,
