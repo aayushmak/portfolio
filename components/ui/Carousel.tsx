@@ -1,7 +1,7 @@
 "use client";
 import { IconArrowNarrowRight } from "@tabler/icons-react";
 import { useState, useRef, useId, useEffect } from "react";
-import CertificateModal from "../CertificateModal"; // adjust path if needed
+import CertificateModal from "../CertificateModal"; 
 
 interface SlideData {
   title: string;
@@ -45,19 +45,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
     };
   }, []);
 
-  const handleMouseMove = (event: React.MouseEvent) => {
-    const el = slideRef.current;
-    if (!el) return;
 
-    const r = el.getBoundingClientRect();
-    xRef.current = event.clientX - (r.left + Math.floor(r.width / 2));
-    yRef.current = event.clientY - (r.top + Math.floor(r.height / 2));
-  };
-
-  const handleMouseLeave = () => {
-    xRef.current = 0;
-    yRef.current = 0;
-  };
 
   const imageLoaded = (event: React.SyntheticEvent<HTMLImageElement>) => {
     event.currentTarget.style.opacity = "1";
@@ -70,9 +58,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
       <li
         ref={slideRef}
         className="pointer-events-auto flex flex-1 flex-col items-center justify-center relative text-center text-white opacity-100 transition-all duration-300 ease-in-out w-[70vmin] h-[70vmin] mx-[4vmin] z-10"
-        onClick={() => handleSlideClick(index)}
-        onMouseMove={handleMouseMove}
-        onMouseLeave={handleMouseLeave}
+      
         style={{
           transform:
             current !== index
@@ -118,10 +104,10 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
           <div className="flex justify-center">
             <button
               onClick={(e) => {
-                e.stopPropagation(); // prevent slide change when clicking the button
+                e.stopPropagation(); 
                 setModalOpen(true);
               }}
-              className="mt-6 px-4 py-2 w-fit mx-auto sm:text-sm text-black bg-white h-12 border border-transparent text-xs flex justify-center items-center rounded-2xl hover:shadow-lg transition duration-200 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
+              className="mt-6 px-4 py-2 w-fit mx-auto sm:text-sm text-black font-semibold bg-black-100/20 h-12 border border-transparent text-sm flex justify-center items-center rounded-3xl hover:shadow-lg transition duration-200 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
             >
               {button}
             </button>
