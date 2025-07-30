@@ -1,3 +1,5 @@
+import { button } from "framer-motion/client";
+
 export const navItems = [
   { name: "Home", link: "#" },
   { name: "About", link: "#about" },
@@ -172,7 +174,7 @@ export const workExperience = [
   {
     id: 1,
     title: "Frontend Developer Intern",
-    desc: "Assisted in the development of a web-based platform using HTML5, CSS, JS and React.js, enhancing interactivity.",
+    desc: "Assisted in the development of a web-based platform using HTML5, CSS, JS and React, enhancing interactivity.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
@@ -190,6 +192,13 @@ export const workExperience = [
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
+  {
+    id: 4,
+    title: "Alumni",
+    desc: "Alumni of Women Leader's in Technology(non-profit organization), volunteering and contributing to foster the involvement of women in the field of tech.",
+    clasName: "md:col-span-2",
+    thumbnail: '/exp2.svg'
+  }
 ];
 
 export const certificates = [
@@ -214,16 +223,6 @@ export const certificates = [
     src: "/WIIT(Parbat).jpg"
   },
     {
-    title: "Participation",
-    button: "View Certificate",
-    src: "/data.png"
-  },
-    {
-    title: "Participation",
-    button: "View Certificate",
-    src: "/figma.png"
-  },
-    {
     title: "Volunteering",
     button: "View Certificate",
     src: "/expo.png"
@@ -233,6 +232,21 @@ export const certificates = [
     button: "View Certificate",
     src: "/executive.png"
   },
+  {
+    title: "Participation",
+    button: "View Certificate",
+    src: "/data.png"
+  },
+    {
+    title: "Participation",
+    button: "View Certificate",
+    src: "/figma.png"
+  },
+  {
+    title: "Participaton",
+    button: "View Certificate",
+    src: "/docker.png"
+  }
 
 ]
 

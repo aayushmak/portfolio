@@ -17,7 +17,7 @@ export default function CertificateModal({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-background bg-opacity-80">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-transparent bg-opacity-80">
       <div className="relative max-w-3xl w-full h-auto p-4 bg-transparent rounded-lg ">
         <button
           onClick={onClose}
@@ -25,7 +25,7 @@ export default function CertificateModal({
         >
           ✕
         </button>
-        <h2 className="text-xl font-semibold mb-4 text-center text-white">{title}</h2>
+        
         <img src={src} alt={title} className="w-full max-h-[60vh] object-contain mx-auto" />
       </div>
     </div>
