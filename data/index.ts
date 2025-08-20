@@ -203,27 +203,32 @@ export const workExperience = [
 
 export const certificates = [
   {
-    title: "Mentorship",
+    title: "Mentor",
     button: "View Certificate",
-    src: "/Design_Thinking.png"
+    src: "/DesignThinking.png"
   },
     {
-    title: "Mentorship",
+    title: "Mentor",
     button: "View Certificate",
     src: "/Git&Github.png"
   },
     {
-    title: "Fellowship",
+    title: "Fellow",
     button: "View Certificate",
     src: "/fellowship.png"
   },
+  {
+    title: "Volunteer",
+    button: "View Certificate",
+    src: "/HoC.jpg"
+  },
     {
-    title: "Volunteering",
+    title: "Volunteer",
     button: "View Certificate",
     src: "/WIIT(Parbat).jpg"
   },
     {
-    title: "Volunteering",
+    title: "Volunteer",
     button: "View Certificate",
     src: "/expo.png"
   },
@@ -232,20 +237,40 @@ export const certificates = [
     button: "View Certificate",
     src: "/executive.png"
   },
-  {
-    title: "Participation",
+   {
+    title: "Online Course",
     button: "View Certificate",
-    src: "/data.png"
+    src: "/JS.png"
+  },
+     {
+    title: "Online Course",
+    button: "View Certificate",
+    src: "/PY1.png"
+  },
+     {
+    title: "Online Course",
+    button: "View Certificate",
+    src: "/PY2.png"
+  },
+  {
+    title: "Participant",
+    button: "View Certificate",
+    src: "/ANAIS2024.png"
+  },
+  {
+    title: "Participant",
+    button: "View Certificate",
+    src: "/docker.png"
   },
     {
-    title: "Participation",
+    title: "Participant",
     button: "View Certificate",
     src: "/figma.png"
   },
   {
-    title: "Participaton",
+    title: "Participant",
     button: "View Certificate",
-    src: "/docker.png"
+    src: "/data.png"
   }
 
 ]
